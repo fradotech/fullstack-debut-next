@@ -1,0 +1,12 @@
+{
+  "type": "mysql",
+  "logging": false,
+  "entities": ["src/backend/database/entities/**/*.ts"],
+  "migrations": ["src/backend/database/migrations/**/*.ts"],
+  "subscribers": ["src/backend/database/subscribers/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/backend/database/entities",
+    "migrationsDir": "src/backend/database/migrations",
+    "subscribersDir": "src/backend/database/subscribers"
+  }
+}
