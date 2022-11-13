@@ -8,7 +8,7 @@ import {
   Matches,
   MinLength
 } from 'class-validator'
-import { IAppRole } from '../../role/interfaces/role.interface'
+import { Role } from '../../role/enums/role.enum'
 import { STRING_PASSWORD_CHARACTER } from '../common/character.constant'
 import { IAppUser } from '../interfaces/user.interface'
 
@@ -62,6 +62,6 @@ export class UserRequest implements IAppUser {
   @IsString()
   token!: string
 
-  role!: IAppRole
+  role!: Role
   isVerified!: boolean
 }
